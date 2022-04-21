@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s ease-in-out;
+}
+
+html{
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar{
+  display: none;
+}
+
+body{
+  font-family: 'Playfair Display', serif;
+}
+
+.nav{
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 100px;
+  height: 110px;
+  width: 110px;
+  float: left;
+  background-image: url(../Images/Logo2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  z-index: 10;
+  transition: 0.5s ease-in-out;
+}
+
+
+.nav ul{
+  margin-right: 160px;
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  z-index:100;
+}
+
+.nav ul a{
+  line-height:100px;
+  color: #333;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-size:14px;
+  font-weight:bold;
+  text-transform: uppercase;
+  z-index:100;
+
+}
+
+.red:hover{
+  background: rgba(238, 4, 4, 0.7);
+  border-radius: 6px;
+  color: #000000;
+  font-size:17px;
+
+}
+.white:hover{
+  background: rgba(250, 250, 250, 0.7);
+  border-radius: 6px;
+  color: #000000;
+  font-size:17px;
+
+}
+.green:hover{
+  background: rgba(21, 94, 11, 0.7);
+  border-radius: 6px;
+  color: #000000;
+  font-size:17px;
+
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+.footer p{
+  background: rgba(189, 195, 199,0.1);
+  font-size: 12px;
+  margin:10px;
+}
+
+.video_section{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  z-index: -100;
+}
+video{
+  width: 100%;
+  height: 100%;
+  z-index: -100;
+}
+
+
+
+
